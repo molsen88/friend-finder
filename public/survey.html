@@ -8,6 +8,7 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
             integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery.js"></script>
 
 
     </head>
@@ -36,11 +37,11 @@
                     <form role="form">
                         <div class="form-group">
                             <label for="reserve-name">Name</label>
-                            <input type="text" class="form-control" id="reserve-name">
+                            <input type="text" class="form-control" id="name">
                         </div>
                         <div class="form-group">
-                            <label for="reserve-phone">Age</label>
-                            <input type="text" class="form-control" id="reserve-phone">
+                            <label for="reserve-phone">Favorite Team</label>
+                            <input type="text" class="form-control" id="favorite-team">
                         </div>
                     </form>
                 </div>
@@ -49,7 +50,20 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>1. How much do you enjoy playing soccer?</h3>
+                        <h2>Question 1</h2>
+                        <h3>How much do you enjoy playing soccer?</h3>
+                    </label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                    </select>
+
+                    <label for="exampleFormControlSelect1">
+                        <h2>Question 2</h2>
+                        <h3>How much do you enjoy playing tennis?</h3>
                     </label>
                     <select class="form-control" id="exampleFormControlSelect1">
                         <option>5</option>
@@ -61,9 +75,10 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>2. How much do you enjoy playing tennis?</h3>
+                        <h2>Question 3</h2>
+                        <h3>How much do you enjoy playing basektball?</h3>
                     </label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect3">
                         <option>5</option>
                         <option>4</option>
                         <option>3</option>
@@ -73,9 +88,10 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>3. How much do you enjoy playing basektball?</h3>
+                        <h2>Question 4</h2>
+                        <h3>How much do you enjoy playing golf?</h3>
                     </label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect4">
                         <option>5</option>
                         <option>4</option>
                         <option>3</option>
@@ -85,9 +101,10 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>4. How much do you enjoy playing golf?</h3>
+                        <h2>Question 5</h2>
+                        <h3>How much do you enjoy playing football?</h3>
                     </label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect5">
                         <option>5</option>
                         <option>4</option>
                         <option>3</option>
@@ -97,9 +114,10 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>5. How much do you enjoy playing football?</h3>
+                        <h2>Question 6</h2>
+                        <h3>How much do you enjoy hiking?</h3>
                     </label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect6">
                         <option>5</option>
                         <option>4</option>
                         <option>3</option>
@@ -109,9 +127,10 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>6. How much do you enjoy hiking?</h3>
+                        <h2>Question 7</h2>
+                        <h3>How much do you enjoy playing rock climbing?</h3>
                     </label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect7">
                         <option>5</option>
                         <option>4</option>
                         <option>3</option>
@@ -121,9 +140,10 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>7. How much do you enjoy playing rock climbing?</h3>
+                        <h2>Question 8</h2>
+                        <h3>How much do you enjoy running?</h3>
                     </label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect8">
                         <option>5</option>
                         <option>4</option>
                         <option>3</option>
@@ -133,9 +153,10 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>8. How much do you enjoy running?</h3>
+                        <h2>Question 9</h2>
+                        <h3>How much do you enjoy biking?</h3>
                     </label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control" id="exampleFormControlSelect9">
                         <option>5</option>
                         <option>4</option>
                         <option>3</option>
@@ -145,19 +166,8 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">
-                        <h3>9. How much do you enjoy biking?</h3>
-                    </label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>5</option>
-                        <option>4</option>
-                        <option>3</option>
-                        <option>2</option>
-                        <option>1</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">
-                        <h3>10. How much do you enjoy being lazy and watching sports?</h3>
+                        <h2>Question 10</h2>
+                        <h3>How much do you enjoy being lazy and watching sports?</h3>
                     </label>
                     <select class="form-control" id="exampleFormControlSelect1">
                         <option>5</option>
@@ -185,3 +195,25 @@
     </body>
 
 </html>
+
+<script type="text/javascript">
+
+    $( ".submit" ).on( "click", function ( event ) {
+        event.preventDefault();
+
+        var scores = []
+
+        var newFriend = {
+            name: $( "#name" ).val().trim(),
+            favoriteTeam: $( "#favorite-team" ).val().trim(),
+            scores: $( "#exampleFormControlSelect1 option:selected" ).push()
+        };
+
+        console.log( newFriend );
+
+        // $.post( "/api/friends.js", function(data){
+
+        // }  )
+    } )
+
+</script>

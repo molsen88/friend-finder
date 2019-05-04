@@ -1,7 +1,9 @@
-var friends = {
-    "name": "Michael",
-    "age": 35,
-    "scores": [
+var friendsArray = [{
 
-    ]
-}
+    name: "",
+    favoriteTeam: "",
+    scores: []
+
+}];
+
+module.exports = friendsArray;
