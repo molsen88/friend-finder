@@ -1,4 +1,4 @@
-var friendsArray = [{
+var friendsData = [{
 
     name: "",
     favoriteTeam: "",
@@ -6,4 +6,4 @@ var friendsArray = [{
 
 }];
 
-module.exports = friendsArray;
+module.exports = friendsData;
