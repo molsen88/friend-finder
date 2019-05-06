@@ -181,6 +181,8 @@
                 <button type="submit" class="btn btn-primary submit">Submit</button>
 
 
+
+
             </div>
 
             <footer class="footer">
@@ -221,14 +223,41 @@
                 $( "#question10" ).val()
 
             ]
+
         };
 
         console.log( newFriend );
         $.post( "/api/friends", newFriend,
             function ( data ) {
-
             } )
+        newArray();
+        function newArray( scores ) {
+            var questionAnswers = [];
+            questionAnswers.push( newFriend.scores );
+            var splitAnswers = questionAnswers.toString().split( ',' ).push( questionAnswers );
+
+            console.log( questionAnswers )
+            console.log( answers )
+            // for ( var i = 0; i < questionAnswers.length; i++ ) {
+            //     var splitAnswers = [];
+
+            //     var answers = parseInt( splitAnswers );
+            //     console.log( answers )
+            // }
+        }
+
     } )
 
 
 </script>
+
+<!-- LEFT TO DO -->
+
+<!-- GET SCORES FROM OBJECTS
+    PUT INTO NEW ARRAY??-------DONE
+    CHANGE THE STRING SCORES TO NUMBERS (PARSE)
+    COMPARE EACH INDIVIDUAL ELEMENT IN THE ARRAYS
+    ADD UP THE DIFFERENCES OF EACH QUESTION
+    ABSOLUTE VALUES
+    DISPLAY THE MATCH OF THE INDIVIDUAL WITH OTHER USERS
+      -->
